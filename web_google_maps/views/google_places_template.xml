@@ -11,7 +11,7 @@
             <t t-if="not google_maps_api_key">
                 <script t-att-async="'async'" t-att-defer="'defer'" t-attf-src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places#{google_maps_region_localization}#{google_maps_lang_localization}"></script>
             </t>
-            <script src="https://cdn.rawgit.com/gityopie/v3-utility-library/master.2018-01-18.99a385c/markerclusterer/src/markerclusterer.js"></script>
+            <script type="text/javascript" src="/web_google_maps/static/src/js/lib/markerclusterer.js"></script>
         </template>
         <!-- Load gmaps assets -->
         <!-- Didn't load the assets like how Odoo call and manage the assets (t-call-assets) -->
